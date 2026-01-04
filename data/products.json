@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Artificial Lily",
+    "category": "lily",
+    "image": "/assets/images/products/lily/lily1.png",
+    "description": "Premium quality, realistic look"
+  },
+  {
+    "id": 2,
+    "name": "Artificial Rose",
+    "category": "rose",
+    "image": "/assets/images/products/rose/rose1.jpg",
+    "detailImages": [
+  "/assets/images/products/rose/rose1.jpg",
+  "/assets/images/products/rose/rose2.jpg"
+],
+    "description": "Perfect for home & decoration"
+  },
+  {
+    "id": 3,
+    "name": "Artificial Orchid",
+    "category": "orchid",
+    "image": "/assets/images/products/orchid/orchid1.jpg",
+    "description": "Elegant & long lasting"
+  },
+  {
+  "id": 4,
+  "name": "Artificial Rose Bouquet",
+  "category": "rose",
+  "image": "/assets/images/products/rose/rose2.jpg",
+  "detailImages": [
+    "/assets/images/products/rose/rose2.jpg"
+  ],
+  "description": "Beautiful bouquet style artificial rose for home decor"
+}
+
+]
