@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artificial-flower-house.netlify.app/sitemap.xml
