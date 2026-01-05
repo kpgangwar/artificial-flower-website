@@ -241,3 +241,35 @@ body {
     text-align: center;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  /* Header layout fix */
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px; /* THIS IS IMPORTANT */
+  }
+
+  /* WhatsApp button spacing */
+  .whatsapp-btn {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Hamburger spacing */
+  .menu-toggle {
+    margin-left: 10px;
+    font-size: 26px;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
