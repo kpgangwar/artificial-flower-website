@@ -250,7 +250,7 @@ height: 45px;
 
 .footer-brand h3 {
   color: red;
-  margin-bottom: 3px;
+  margin-bottom: px;
   margin-top: -50px;
 }
 
@@ -279,12 +279,18 @@ height: 45px;
   color: #aaa;
 }
 
+
+
 /* ===== MOBILE MENU FIX ===== */
 @media (max-width: 768px) {
 
   /* Remove underline effect on mobile */
   .nav a::after {
     display: none;
+     .footer-brand h3 {
+    margin-top: 0;        /* negative margin remove */
+    margin-bottom: 8px;  /* normal spacing */
+    text-align: center;  /* optional, looks better */
   }
 
   /* Active menu clean background */
