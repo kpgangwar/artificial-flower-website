@@ -17,7 +17,7 @@
 //   window.open(whatsappURL, "_blank");
 // }
 
-function orderOnWhatsApp(productName, productLink) {
+ function orderOnWhatsApp(productName, productLink) {
   const phoneNumber = "918909087801";
 
   const message =
