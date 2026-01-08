@@ -1,7 +1,6 @@
 /* =========================
-   HEADER FINAL FIX
+   HEADER
 ========================= */
-
 .site-header {
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -33,7 +32,9 @@
   color: #c0392b;
 }
 
-/* WhatsApp */
+/* =========================
+   WHATSAPP BUTTON
+========================= */
 .whatsapp-btn {
   background: #25D366;
   color: #fff;
@@ -44,27 +45,119 @@
   font-size: 14px;
   cursor: pointer;
   margin-right: 8px;
-   text-decoration: none;
-   display: inline-flex;              /* text + icon centering */
-  align-items: center;               /* vertical center */
-  justify-content: center; 
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Hamburger */
-.menu-toggle {
-  font-size: 26px;
-  cursor: pointer;
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  color: #fff;
 }
 
-/* NAV MENU */
+/* =========================
+   NAVIGATION (DESKTOP)
+========================= */
 .nav {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #25D366;
+}
+
+.nav a.active {
+  color: #c0392b;
+  font-weight: 700;
+  /* border-bottom: 2px solid #c0392b; */
+}
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+/* =========================
+   FOOTER (DESKTOP)
+========================= */
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.site-footer .footer-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-brand h1 {
+  color: red;
+  margin: 0 0 8px 0;
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-links a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin: 6px 0;
+}
+
+.footer-links a:hover {
+  color: #25D366;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* =========================
+   MOBILE STYLES
+========================= */
 @media (max-width: 768px) {
 
+  /* Hamburger visible */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Mobile nav */
   .nav {
     display: none;
     flex-direction: column;
@@ -79,81 +172,19 @@
   .nav a {
     padding: 14px;
     text-align: center;
-    text-decoration: none;
-    color: #333;
+  }
+
+  /* Footer stacked */
+  .site-footer .footer-flex {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    text-align: center;
   }
 }
-
-
-/* =========================
-   FOOTER
-========================= */
-.site-footer {
-  background: #111;
-  color: #fff;
-  padding: 40px 0 20px;
-  margin-top: 60px;
-}
-
-.footer-flex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  align-items: center;
-}
-
-/* FOOTER BRAND (FIXED – NO NEGATIVE MARGIN) */
-.footer-brand {
-  padding-top: 10px;
-  text-align: center;
-}
-
-.footer-brand h3 {
-  color: red;
-  margin: 0 0 8px 0;
-}
-
-/* FOOTER LINKS */
-.footer-links a {
-  display: block;
-  color: #bbb;
-  text-decoration: none;
-  margin: 6px 0;
-}
-
-.footer-links a:hover {
-  color: #fff;
-}
-
-/* FOOTER CONTACT */
-.footer-contact p {
-  margin: 6px 0;
-  font-size: 14px;
-}
-
-/* FOOTER BOTTOM */
-.footer-bottom {
-  border-top: 1px solid #333;
-  text-align: center;
-  margin-top: 25px;
-  padding-top: 15px;
-  font-size: 14px;
-  color: #aaa;
-}
-/* =========================
-   FOOTER LINK COLORS FIX
-========================= */
-
-.site-footer a {
-  color: #bbb;              /* normal footer link color */
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  color: #25D366;           /* WhatsApp green (or use #c0392b for brand red) */
-  text-decoration: none;
-}
-
 
 /* =========================
    BUTTONS

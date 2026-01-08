@@ -16,8 +16,8 @@ function displayProducts(products) {
     card.className = "product-card";
 
     card.innerHTML = `
-      <img src="${product.image}" alt=Artificial"${product.name} 
-      lily for office decor">
+      <img src="${product.image}" alt="Artificial ${product.name} for home decor">
+
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <a href="product-details.html?id=${product.id}" class="btn small">
@@ -29,20 +29,16 @@ function displayProducts(products) {
     grid.appendChild(card);
   });
 }
-
-function filterProducts(category) {
-  // button active state
+function filterProducts(category, btn) {
   document.querySelectorAll(".filter-buttons button")
-    .forEach(btn => btn.classList.remove("active"));
+    .forEach(b => b.classList.remove("active"));
 
-  event.target.classList.add("active");
+  btn.classList.add("active");
 
   if (category === "all") {
     displayProducts(allProducts);
   } else {
-    const filtered = allProducts.filter(
-      p => p.category === category
-    );
-    displayProducts(filtered);
+    displayProducts(allProducts.filter(p => p.category === category));
   }
 }
+
