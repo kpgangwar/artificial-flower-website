@@ -33,6 +33,17 @@
     "/assets/images/products/rose/rose2.jpg"
   ],
   "description": "Beautiful bouquet style artificial rose for home decor"
+},
+  {
+  "id": 5,
+  "name": "Artificial plant Bouquet",
+  "category": "artificial-plant",
+  "image": "/assets/images/products/artificial-plants/artificialplant.jpeg", 
+
+  "detailImages":[ 
+    "/assets/images/products/artificial-plants/artificialplant.jpeg"
+  ],
+  "description": "Beautiful bouquet style artificial-plant for home decor"
 }
 
 ]

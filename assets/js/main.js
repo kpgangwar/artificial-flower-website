@@ -42,3 +42,5 @@ fetch("/components/footer.html")
   .then(data => {
     document.getElementById("footer").innerHTML = data;
   });
+
+  console.log("MAIN JS LOADED - HOME PAGE");

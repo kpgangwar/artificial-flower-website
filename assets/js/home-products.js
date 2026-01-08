@@ -2,8 +2,8 @@ fetch("/data/products.json")
   .then(res => res.json())
   .then(products => {
 
-    // Top 3 products for home page
-    const popularProducts = products.slice(0, 3);
+    // Top 5 products for home page
+    const popularProducts = products.slice(0, 5);
 
     const grid = document.getElementById("homeProductGrid");
     if (!grid) return;
