@@ -73,3 +73,15 @@
 .product-card h3 {
   margin: 15px 0;
 }
+
+/* banner slider */
+
+.hero {
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}

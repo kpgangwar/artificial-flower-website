@@ -1,3 +1,19 @@
+const slides = [
+  "assets/images/banner/banner1.jpg",
+  "assets/images/banner/banner2.jpg",
+  "assets/images/banner/banner3.jpg"
+];
+
+let currentSlide = 0;
+
+const slideImage = document.getElementById("slideImage");
+
+if (slideImage) {
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    slideImage.src = slides[currentSlide];
+  }, 3000);
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
