@@ -88,8 +88,9 @@
 
   .nav.active{
     display:flex !important;
+  }
 
-     header .nav{
+  header .nav{
     display:none !important;
   }
 
@@ -99,6 +100,5 @@
 
   header .nav.active{
     display:flex !important;
-  }
   }
 }
