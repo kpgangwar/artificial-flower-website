@@ -63,16 +63,30 @@
 /* =========================
    MOBILE OPTIMIZATION
 ========================= */
-@media (max-width: 768px) {
-  .gallery-section {
-    padding: 40px 0;
+@media (max-width: 768px){
+
+  .gallery-section{
+    padding:40px 0;
   }
 
-  .section-title {
-    font-size: 26px;
+  .section-title{
+    font-size:26px;
   }
 
-  .gallery-card img {
-    height: 220px;
+  .gallery-card img{
+    height:220px;
+  }
+
+  /* Force mobile header */
+  .menu-toggle{
+    display:block !important;
+  }
+
+  .nav{
+    display:none !important;
+  }
+
+  .nav.active{
+    display:flex !important;
   }
 }
