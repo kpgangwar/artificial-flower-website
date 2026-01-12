@@ -86,5 +86,15 @@
   <div id="footer"></div>
 
   <script src="assets/js/main.js"></script>
+  <script>
+const page = document.body.getAttribute("data-page");
+
+document.querySelectorAll(".nav a").forEach(link=>{
+  if(link.dataset.page === page){
+    link.classList.add("active");
+  }
+});
+</script>
+
 </body>
 </html>

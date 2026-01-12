@@ -1,0 +1,63 @@
+.about-hero{
+  background: linear-gradient(135deg,#c0392b,#e74c3c);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.about-hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.about-intro{
+  padding:50px 20px;
+  background:#f9f9f9;
+}
+
+.about-text{
+  max-width:800px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.6;
+  text-align:center;
+}
+
+.about-features{
+  padding:50px 20px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.about-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.about-card h3{
+  color:#c0392b;
+  margin-bottom:10px;
+}
+
+.about-cta{
+  background:#c0392b;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.about-cta .btn{
+  margin-top:20px;
+  background:white;
+  color:#c0392b;
+}
+

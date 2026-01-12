@@ -9,11 +9,13 @@
   z-index: 1000;
 }
 
+
 .header-flex {
   display: flex;
   align-items: center;
   padding: 12px 0;
 }
+
 
 .logo {
   display: flex;
@@ -71,6 +73,11 @@
   font-weight: 500;
 }
 
+.nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
 .nav a:hover {
   color: #25D366;
 }
@@ -78,7 +85,7 @@
 .nav a.active {
   color: #c0392b;
   font-weight: 700;
-  /* border-bottom: 2px solid #c0392b; */
+  border-bottom: 2px solid #c0392b;
 }
 
 /* Hamburger hidden on desktop */
@@ -152,31 +159,47 @@
 ========================= */
 @media (max-width: 768px) {
 
-  /* Hamburger visible */
-  .menu-toggle {
-    display: block;
+  /* Show hamburger */
+  .menu-toggle{
+    display:block;
   }
 
-  /* Mobile nav */
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    border-top: 1px solid #eee;
+  /* Header lock */
+  .site-header{
+    position: sticky;
+    top:0;
+    background:white;
+    z-index:9999;
   }
 
-  .nav.active {
-    display: flex;
+  /* Mobile dropdown menu */
+  .nav{
+    position:absolute;
+    top:100%;
+    right:0px;           /* 👈 right side hamburger ke niche */
+    width:100px;
+    background:white;
+    display:none;
+    flex-direction:column;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    border-radius:12px;
   }
 
-  .nav a {
-    padding: 14px;
-    text-align: center;
+  .nav.active{
+    display:flex;
   }
 
-  /* Footer stacked */
+  .nav a{
+    text-decoration: none;
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+  }
+
+  /* Footer stack */
   .site-footer .footer-flex {
-    grid-template-columns: 1fr;
+  
+    grid-template-columns: 2fr;
     text-align: center;
   }
 
@@ -184,7 +207,26 @@
   .footer-contact {
     text-align: center;
   }
+  /* Remove big gap before footer */
+footer,
+.site-footer{
+  margin-top: 0 !important;
+  padding-top: 20px;
 }
+
+main{
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.about-page,
+.contact-page{
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important;
+}
+
+}
+
 
 /* =========================
    BUTTONS
@@ -207,3 +249,17 @@
   border: 2px solid #c0392b;
   color: #c0392b;
 }
+
+
+/* Remove extra gap in mobile hamburger menu */
+.nav{
+  gap: 0 !important;
+}
+
+.nav a{
+  padding: 8px 12px !important;
+  margin: 0 !important;
+  line-height: 1.1 !important;
+}
+
+

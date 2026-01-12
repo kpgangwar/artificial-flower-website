@@ -19,12 +19,7 @@
   <link rel="stylesheet" href="/assets/css/products.css">
 
 </head>
-<body>
-
-
-  
-
-  <body data-page="products">
+  <body data-page="product-details">
 
   <div id="header"></div>
 
@@ -46,6 +41,16 @@
   <script src="/assets/js/whatsapp.js"></script>
   <script src="/assets/js/product-detail.js"></script>
   <script src="/assets/js/main.js"></script>
+  
+<script>
+const page = document.body.getAttribute("data-page");
+
+document.querySelectorAll(".nav a").forEach(link=>{
+  if(link.dataset.page === page){
+    link.classList.add("active");
+  }
+});
+</script>
 </body>
 
 
