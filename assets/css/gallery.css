@@ -88,5 +88,17 @@
 
   .nav.active{
     display:flex !important;
+
+     header .nav{
+    display:none !important;
+  }
+
+  header .menu-toggle{
+    display:block !important;
+  }
+
+  header .nav.active{
+    display:flex !important;
+  }
   }
 }
