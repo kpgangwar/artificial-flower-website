@@ -23,15 +23,44 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       document.getElementById("header").innerHTML = data;
       setActiveMenu();
-      const menuBtn = document.getElementById("menuBtn");
-      const navMenu = document.getElementById("navMenu");
+      // const menuBtn = document.getElementById("menuBtn");
+      // const navMenu = document.getElementById("navMenu");
 
-      if (menuBtn && navMenu) {
-        menuBtn.addEventListener("click", () => {
-          navMenu.classList.toggle("active");
-          console.log("Menu toggled"); // test
-        });
-      }
+      // if (menuBtn && navMenu) {
+      //   menuBtn.addEventListener("click", () => {
+      //     navMenu.classList.toggle("active");
+      //     console.log("Menu toggled"); // test
+      //   });
+      // }
+
+      const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+if (menuBtn && navMenu) {
+
+  // Toggle menu on hamburger click
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navMenu.classList.toggle("active");
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      navMenu.classList.remove("active");
+    }
+  });
+
+  // Close when touching outside (mobile)
+  document.addEventListener("touchstart", (e) => {
+    if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      navMenu.classList.remove("active");
+    }
+  });
+
+}
+
+
     });
 
 });
